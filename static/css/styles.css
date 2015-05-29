@@ -1,0 +1,13 @@
+body {
+	color:#000305;
+	font-size: 80%;
+	font-family: 'Lucida Sans Unicode';
+	line-height: 1.5;
+	text-align: left;
+}
+
+.body{
+	margin:0 auto;
+	width:75%;
+	clear:both;
+}
