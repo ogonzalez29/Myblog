@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Blog Servitalleres</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="static/css/styles.css">
+	<meta name="viewport content" = "width-device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+	<header class ="mainHead">
+		<img src="/static/img/logoservitalleres.jpg" width="700" height="144">
+	</header>
+</body>
+{% for post in posts %}
+<h2>{{post.title}}</h2>
+<p>Escrito por: {{post.author}}<p>
+<p>{{post.time}}</p>
+<p>{{post.body|safe|linebreaks}}</p>
+{% endfor %}
+</html>
